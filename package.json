@@ -1,0 +1,27 @@
+{
+  "name": "cs-312-miniproject-4",
+
+  "version": "1.0.0",
+
+  "private": true,
+  "main": "server.js",
+
+  "scripts":
+  
+  {
+    "start": "npm run build && node --env-file=.env server.js",
+    "build": "esbuild client/App.js --bundle --loader:.js=jsx --outfile=public/js/app.js",
+    "db:setup": "node --env-file=.env setup.js"
+  },
+  "engines": { "node": ">=20.12.0" },
+  "dependencies": 
+  
+  {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "esbuild": "^0.25.0",
+    "express": "^5.2.1",
+    "express-session": "^1.18.1",
+    "pg": "^8.16.3"
+  }
+}

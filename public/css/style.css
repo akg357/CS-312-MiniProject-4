@@ -1,0 +1,161 @@
+body
+{
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 1.2rem 11px;
+    background: #eae8e8;
+    color: #0080ff;
+}
+
+/* center the main title area */
+header
+{
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+h1
+{
+    color: #1e293b;
+    font-weight: 920;
+}
+
+/* wrap the site contents so it doesn't stretch too wide */
+main
+{
+    max-width: 52rem;
+    margin: 0 auto;
+}
+
+/* basic white card style for my content sections */
+section
+
+{
+    background: #e3e3e3;
+    padding: 30px;
+    margin-bottom: 3rem;
+    border: 2px solid #cc00ff;
+    border-radius: 9px;
+}
+
+/* make typing fields full width and add some breathing room */
+input, textarea
+
+{
+    width: 100%;
+    padding: 10px 11px;
+    margin: 9px 0 19px;
+    box-sizing: border-box;
+    border: 1px solid #b700ff;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* button shape, color, and hover transition trick */
+button
+{
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 0;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.15s ease;
+}
+
+/* Keep long posts inside their cards. */
+.post-body
+{
+    white-space: pre-wrap; overflow-wrap: anywhere; color: #1e293b;
+}
+
+h3
+{
+    overflow-wrap: anywhere;
+}
+
+.actions
+{
+    display: flex; align-items: center; gap: 18px;
+}
+
+.auth
+{
+    max-width: 32rem;
+}
+
+.error
+{
+    color: #a11212;
+}
+
+.success
+{
+    color: #166534;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+button:hover
+
+{
+    background-color: #1d4ed8;
+}
+
+/* space out separate posts and hide the bottom border on the last one */
+article
+
+{
+    border-bottom: 1px solid #e2e8f0;
+    padding: 18px 0;
+}
+
+article:last-of-type
+
+{
+    border-bottom: none;
+}
+
+/* clear blue link styles */
+a
+{
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover
+
+{
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* shrink the text sizes and spacing when viewing on a phone screen */
+@media (max-width: 480px)
+
+{
+    body
+
+    {
+        padding: 1rem 8px;
+
+    }
+
+    section
+
+    {
+        padding: 16px;
+
+    }
+
+    h1
+    {
+        font-size: 1.65rem;
+
+    }
+}
+
