@@ -4,22 +4,33 @@ import api from "./api";
 export default function SignIn()
 {
     const [userId, setUserId] = useState("");
+
+
+
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [saving, setSaving] = useState(false);
     const created = new URLSearchParams(window.location.search).get("created") === "1";
 
-    // The form sends these fields to the server.
+    // This form sends these fields to the server.
     async function submit(event)
     {
         event.preventDefault();
+
+
         setError("");
+
         setSaving(true);
+
+
+
         try
         {
             await api("/api/signin", { user_id: userId, password });
             window.location.href = "/";
         }
+
+
         catch (err)
         {
             setError(err.message);
@@ -27,6 +38,7 @@ export default function SignIn()
         }
     }
 
+    
     return (
         <>
             <header><h1>Sign In to The Blog</h1></header>
